@@ -9,7 +9,7 @@ export const App = () => {
   const [title, setTitle] = useState("");
 
   const getTask = async () => {
-    const response = await Axios.get("http://localhost:8082/");
+    const response = await Axios.get("https://task-management-app-8cha.onrender.com/");
     setTask(response.data);
   };
 
